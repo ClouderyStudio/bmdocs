@@ -187,7 +187,7 @@ export default defineConfig({
                   },
                   {
                       text: '破解版',
-                      link: '/game/xczwc/cracked.md',
+                      link: '/game/xczwc/mod.md',
                   },
                   {
                       text: '脚本',
@@ -203,11 +203,11 @@ export default defineConfig({
                   },
                   {
                       text: '鸣谢名单',
-                      link: '/game/xczwc/mingxie.md',
+                      link: '/game/xczwc/thanks.md',
                   },
                   {
                       text: '免责声明',
-                      link: '/game/xczwc/mianze.md',
+                      link: '/game/xczwc/disclaimer.md',
                   }
                   ]
             }
