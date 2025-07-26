@@ -91,25 +91,6 @@ export default defineConfig({
           ],
         },
       ],
-      '/learn/': [
-        {
-          text: '学习内容',
-          items: [
-            {
-                text: '简言',
-                link: '/learn/'
-            },
-            {
-                text: '每周作业',
-                link: '/learn/homework/',
-            },
-            {
-                text: '英语作文',
-                link: '/learn/composition/',
-            }
-          ],
-        },
-      ],
       '/serve/': [
         {
           text: '服务',
@@ -186,11 +167,11 @@ export default defineConfig({
                       link: '/game/xczwc/newbie_way_strate.md',
                   },
                   {
-                      text: '破解版',
+                      text: 'Mod版',
                       link: '/game/xczwc/mod.md',
                   },
                   {
-                      text: '脚本',
+                      text: 'Lua',
                       link: '/game/xczwc/script.md',
                   },
                   {
@@ -198,7 +179,7 @@ export default defineConfig({
                       link: '/game/xczwc/fenxiang.md',
                   },
                   {
-                      text: '代刷',
+                      text: '代理定制',
                       link: '/game/xczwc/daishua.md',
                   },
                   {
