@@ -1,18 +1,16 @@
 {
-	"name": "vite-docs-cn",
+	"name": "cloudery-docs",
 	"version": "1.0.0",
-	"description": "Vite.js documentation Chinese translation.",
-	"repository": "https://github.com/vitejs/docs-cn",
+	"description": "cloudery docs",
 	"type": "module",
-	"author": "Evan You",
+	"author": "JustQiyi, YZ",
 	"private": true,
-	"license": "CC BY-NC-SA 4.0",
 	"devDependencies": {
-		"chalk": "^4.1.0",
+		"chalk": "^5.4.1",
 		"gray-matter": "^4.0.3",
 		"lodash": "^4.17.21",
-		"vite": "^2.9.12",
-		"vitepress": "^1.0.0-alpha.43",
+		"vite": "^7.0.6",
+		"vitepress": "^1.6.3",
 		"yorkie": "^2.0.0"
 	},
 	"scripts": {
