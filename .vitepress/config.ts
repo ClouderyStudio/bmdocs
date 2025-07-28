@@ -8,8 +8,8 @@ const ogTitle = 'Vite'
 const ogUrl = 'https://vitejs.dev'
 
 export default defineConfig({
-  title: 'ClouderyDoc',
-  description: '云术工作室文档站',
+  title: '笔墨星河文档站',
+  description: '笔墨星河文档站',
   lang: 'zh-CN',
 
   head: [
@@ -57,13 +57,11 @@ export default defineConfig({
 
     footer: {
       copyright:
-        'Copyright 2022-2024 Cloudery , Std.'
+        'Copyright 2022-2025 Cloudery&笔墨星河 , Std.'
     },
 
     nav: [
       { text: '指引', link: '/docs/', activeMatch: '/docs/' },
-      { text: '游戏', link: '/game/', activeMatch: '/game/'},
-      { text: '服务', link: '/serve/', activeMatch: '/serve/'},
       { text: '团队', link: '/team' },
     ],
 
@@ -77,124 +75,86 @@ export default defineConfig({
                 link: '/docs/'
             },
             {
-                text: '小说栏',
-                link: '/docs/xiaoshuo.md',
+              text: 'api配置',
+              link: '/docs/api/',
+              items: [
+                {
+                    text: 'deepseek',
+                    link: '/docs/api/deepseek.md',
+                },
+                {
+                    text: '硅基流动',
+                    link: '/docs/api/siliconflow.md',
+                },
+                {
+                    text: 'OpenRouter(默认模型)',
+                    link: '/docs/api/OpenRouter.md',
+                },
+                {
+                    text: 'gemini',
+                    link: '/docs/api/gemini.md',
+                },
+                {
+                    text: 'bigmodel(智谱)',
+                    link: '/docs/api/bigmodel.md',
+                },
+                {
+                    text: 'ollama',
+                    link: '/docs/api/ollama.md',
+                }
+              ]
             },
             {
-                text: '歌单',
-                link: '/docs/gedan.md',
+              text: '下载',
+              link: '/docs/download/',
+              items: [
+                {
+                    text: '使用介绍',
+                    link: '/docs/download/introduction.md',
+                },
+                {
+                    text: '预览版',
+                    link: '/docs/download/preview.md',
+                }
+              ]
             },
             {
-                text: '捐赠',
-                link: '/docs/donate.md',
+              text: 'ai参考输出实例',
+              link: '/docs/example/',
+              items: [
+                {
+                    text: 'DeepSeek V3',
+                    link: '/docs/example/deepseekv3.md',
+                },
+                {
+                    text: 'DeepSeek R1',
+                    link: '/docs/example/deepseekr1.md',
+                },
+                {
+                    text: 'Gemini 2.0 Flash',
+                    link: '/docs/example/gemini2f.md',
+                },
+                {
+                    text: 'Gemini 2.5 Pro Preview 05-06',
+                    link: '/docs/example/gemini25p05-06.md',
+                },
+                {
+                    text: 'Gemini 2.5 Flash Preview 05-20',
+                    link: '/docs/example/gemini25fp05-20.md',
+                },
+                {
+                    text: 'ChatGML(智谱)',
+                    link: '/docs/example/chatgml.md',
+                },
+                {
+                    text: 'Qwen3-235B-A22B',
+                    link: '/docs/example/qwen3-235b-a22b.md',
+                }
+              ]
             }
           ],
         },
-      ],
-      '/serve/': [
-        {
-          text: '服务',
-          items: [
-            {
-                text: '简言',
-                link: '/serve/'
-            },
-            {
-                text: '云术二级域名接口协议',
-                link: '/serve/domapi.md',
-            },
-            {
-                text: '云术论坛用户协议',
-                link: '/serve/BbsRules.md',
-            },
-          ],
-        },
-      ],
-      '/game/': [
-        {
-          text: '游戏服务',
-          items: [
-            {
-              text: '开始',
-              link: '/game/'
-            },
-            {
-              text: '云竹网路服务器',
-              link: '/game/mc/',
-              items: [
-                  {
-                      text: '游戏守则',
-                      link: '/game/mc/GameRules.md',
-                  },
-                  {
-                      text: '群聊规则',
-                      link: '/game/mc/GroupRules.md',
-                  }
-                  ]
-            },
-            {
-              text: '云术生存战争服务器',
-              link: '/game/sc/',
-              items: [
-                  {
-                      text: '游戏守则',
-                      link: '/game/sc/GameRules.md',
-                  },
-                  {
-                      text: '群聊规则',
-                      link: '/game/sc/GroupRules.md',
-                  }
-                  ]
-            },
-            {
-              text: '幸存者危城',
-              link: '/game/xczwc/',
-              items: [
-                  {
-                      text: '疑难杂症解决',
-                      link: '/game/xczwc/FAQ.md',
-                  },
-                  {
-                      text: '游戏攻略',
-                      link: '/game/xczwc/strategy.md',
-                  },
-                  {
-                      text: '游戏攻略(旧版)',
-                      link: '/game/xczwc/strategy_old.md',
-                  },
-                  {
-                      text: '新手专项网路攻略(旧版)',
-                      link: '/game/xczwc/newbie_way_strate.md',
-                  },
-                  {
-                      text: 'Mod版',
-                      link: '/game/xczwc/mod.md',
-                  },
-                  {
-                      text: 'Lua',
-                      link: '/game/xczwc/script.md',
-                  },
-                  {
-                      text: '共享账号',
-                      link: '/game/xczwc/fenxiang.md',
-                  },
-                  {
-                      text: '代理定制',
-                      link: '/game/xczwc/daishua.md',
-                  },
-                  {
-                      text: '鸣谢名单',
-                      link: '/game/xczwc/thanks.md',
-                  },
-                  {
-                      text: '免责声明',
-                      link: '/game/xczwc/disclaimer.md',
-                  }
-                  ]
-            }
-          ],
-        },
-      ],
+      ]
     }
   },
 })
