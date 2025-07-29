@@ -18,8 +18,5 @@
 		"build": "node ./scripts/build.mjs && vitepress build .",
 		"serve": "vitepress serve .",
 		"pages": "npx vitepress build"
-	},
-	"gitHooks": {
-		"commit-msg": "node scripts/verifyCommit.js"
 	}
 }
