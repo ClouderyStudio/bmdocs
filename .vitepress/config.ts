@@ -77,12 +77,8 @@ export default defineConfig({
                 link: '/docs/'
             },
             {
-                text: '小说栏',
-                link: '/docs/xiaoshuo.md',
-            },
-            {
                 text: '歌单',
-                link: '/docs/gedan.md',
+                link: '/docs/MusicList.md',
             },
             {
                 text: '捐赠',
@@ -119,18 +115,8 @@ export default defineConfig({
               link: '/game/'
             },
             {
-              text: '云竹网路服务器',
-              link: '/game/mc/',
-              items: [
-                  {
-                      text: '游戏守则',
-                      link: '/game/mc/GameRules.md',
-                  },
-                  {
-                      text: '群聊规则',
-                      link: '/game/mc/GroupRules.md',
-                  }
-                  ]
+              text: '竹像素MC服务器',
+              link: 'https://www.zhuxs.cn/rules',
             },
             {
               text: '云术生存战争服务器',
@@ -160,11 +146,11 @@ export default defineConfig({
                   },
                   {
                       text: '游戏攻略(旧版)',
-                      link: '/game/xczwc/strategy_old.md',
+                      link: '/game/xczwc/StrategyOld.md',
                   },
                   {
                       text: '新手专项网路攻略(旧版)',
-                      link: '/game/xczwc/newbie_way_strate.md',
+                      link: '/game/xczwc/NewbieWayStrate.md',
                   },
                   {
                       text: 'Mod版',
@@ -176,11 +162,11 @@ export default defineConfig({
                   },
                   {
                       text: '共享账号',
-                      link: '/game/xczwc/fenxiang.md',
+                      link: '/game/xczwc/SharedAccount.md',
                   },
                   {
                       text: '代理定制',
-                      link: '/game/xczwc/daishua.md',
+                      link: '/game/xczwc/HelpToGet.md',
                   },
                   {
                       text: '鸣谢名单',
