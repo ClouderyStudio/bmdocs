@@ -1,6 +1,8 @@
 # 交流方式
 
-<a style="display:inline-block; padding:8px 16px; background:#4285f4; color:white; text-decoration:none; border-radius:4px; font-weight:bold; box-shadow:0 2px 4px rgba(0,0,0,0.2);">TIP:手机端可点击左上角 Menu 切换文档,点击 本页目录 查看目录(若没有目录则显示 Return to top-回到顶端)</a> 
+::: tip 提示
+手机端可点击左上角 Menu 切换文档,点击 本页目录 查看目录(若没有目录则显示 Return to top-回到顶端)
+:::
 
 频道 `xczwcpdh69`
 
