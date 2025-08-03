@@ -6,7 +6,8 @@ import SvgImage from './components/SvgImage.vue'
 import WwAds from './components/WwAds.vue'
 import MouseClick from "./components/MouseClick.vue"
 import MouseFollower from "./components/MouseFollower.vue"
-import MouseWrapper from "./components/MouseWrapper.vue"
+import LayoutTop from "./components/LayoutTop.vue"
+import DomViewTransitions from './components/DomViewTransitions.vue'
 import './styles/vars.css'
 import './styles/blur.css'
 import './styles/blockquote.css'
@@ -24,13 +25,14 @@ export default {
       'home-features-after': () => h(HomeSponsors),
       'aside-outline-after': () => h(WwAds),
       'aside-bottom': () => h(AsideSponsors),
-      'layout-top': () => h(MouseWrapper),
+      'layout-top': () => h(LayoutTop),
     })
   },
   enhanceApp({ app }) {
     app.component('SvgImage', SvgImage)
     app.component('MouseClick' , MouseClick)
     app.component('MouseFollower' , MouseFollower)
-    app.component('MouseWrapper', MouseWrapper)
+    app.component('DomViewTransitions' , DomViewTransitions)
+    app.component('LayoutTop', LayoutTop)
   }
 }
