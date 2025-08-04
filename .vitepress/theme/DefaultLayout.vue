@@ -78,8 +78,6 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
       <LayoutTop />
       <Notice />
     </template>
-
-    <SvgImage />
   </DefaultTheme.Layout>
 </template>
 

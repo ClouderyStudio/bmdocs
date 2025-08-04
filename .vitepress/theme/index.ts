@@ -5,14 +5,24 @@ import Theme from 'vitepress/theme'
 import DefaultLayout from './DefaultLayout.vue'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import ArticleMetadata from './components/ArticleMetadata.vue'
+import MNavLinks from './components/MNavLinks.vue'
+import SvgImage from './components/SvgImage.vue'
 
 export default {
   ...Theme,
-  Layout() {
-    return h(DefaultLayout, null)
+  Layout: () => {
+    const props: Record<string, any> = {}
+    const { frontmatter } = useData()
+    if (frontmatter.value.layoutClass !== null) {
+      props.class = frontmatter.value.layoutClass
+    }
+    return h(DefaultLayout, props)
   },
   enhanceApp({ app , router }) {
     app.component('ArticleMetadata' , ArticleMetadata)
+    app.component('MNavLinks' , MNavLinks)
+    app.component('SvgImage' , SvgImage)
+
     if (inBrowser) {
       router.onAfterRouteChanged = () => {
         busuanzi.fetch()
