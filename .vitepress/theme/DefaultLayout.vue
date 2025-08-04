@@ -4,7 +4,7 @@ import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
 
 // Import components here
-import bsz from './components/bsz.vue'
+import Bsz from './components/Bsz.vue'
 import HomeSponsors from './components/HomeSponsors.vue'
 import AsideSponsors from './components/AsideSponsors.vue'
 import SvgImage from './components/SvgImage.vue'
@@ -62,7 +62,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 <template>
   <DefaultTheme.Layout>
     <template #layout-bottom>
-      <bsz />
+      <Bsz />
     </template>
     <template #home-features-after>
       <HomeSponsors />
