@@ -7,7 +7,7 @@ import WwAds from './components/WwAds.vue'
 import MouseClick from "./components/MouseClick.vue"
 import MouseFollower from "./components/MouseFollower.vue"
 import LayoutTop from "./components/LayoutTop.vue"
-import DomViewTransitions from './components/DomViewTransitions.vue'
+import DefaultLayout from './DefaultLayout.vue'
 import './styles/vars.css'
 import './styles/blur.css'
 import './styles/blockquote.css'
@@ -21,7 +21,7 @@ import './custom.css'
 export default {
   ...Theme,
   Layout() {
-    return h(Theme.Layout, null, {
+    return h(DefaultLayout, null, {
       'home-features-after': () => h(HomeSponsors),
       'aside-outline-after': () => h(WwAds),
       'aside-bottom': () => h(AsideSponsors),
@@ -32,7 +32,6 @@ export default {
     app.component('SvgImage', SvgImage)
     app.component('MouseClick' , MouseClick)
     app.component('MouseFollower' , MouseFollower)
-    app.component('DomViewTransitions' , DomViewTransitions)
     app.component('LayoutTop', LayoutTop)
   }
 }

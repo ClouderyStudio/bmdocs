@@ -7,5 +7,5 @@
 <script setup>
 import MouseClick from './MouseClick.vue';
 import MouseFollower from './MouseFollower.vue';
-import DomViewTransitions from './DomViewTransitions.vue';
+import DomViewTransitions from '../DefaultLayout.vue';
 </script>

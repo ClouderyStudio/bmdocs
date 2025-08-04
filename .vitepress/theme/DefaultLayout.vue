@@ -1,5 +1,5 @@
-<!-- .vitepress/theme/DomViewTransitions.vue -->
 <script setup lang="ts">
+import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
 
@@ -37,7 +37,12 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     }
   )
 })
+
 </script>
+
+<template>
+  <DefaultTheme.Layout />
+</template>
 
 <style>
 ::view-transition-old(root),
