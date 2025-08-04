@@ -28,10 +28,14 @@
       }
     }
   
+    .medium-zoom-overlay,.medium-zoom-image {
+    z-index: 0 !important;
+    }
+
     .vp-doc h2 {
       margin-top: 24px;
     }
-    
+
     .vp-doc a {
     text-decoration: none;
     }
