@@ -3,8 +3,24 @@ import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
 
-// Put components here
+// Import components here
 import bsz from './components/bsz.vue'
+import HomeSponsors from './components/HomeSponsors.vue'
+import AsideSponsors from './components/AsideSponsors.vue'
+import SvgImage from './components/SvgImage.vue'
+import WwAds from './components/WwAds.vue'
+import LayoutTop from "./components/LayoutTop.vue"
+
+// Import css files here
+import './styles/vars.css'
+import './styles/blur.css'
+import './styles/blockquote.css'
+import './styles/custom-block.css'
+import './styles/hidden.css'
+import './styles/vp-code.css'
+import './styles/vp-code-group.css'
+import './styles/sidebarIcon.css'
+import './custom.css'
 
 const { isDark } = useData()
 
@@ -48,6 +64,20 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #layout-bottom>
       <bsz />
     </template>
+    <template #home-features-after>
+      <HomeSponsors />
+    </template>
+    <template #aside-outline-after>
+      <WwAds />
+    </template>
+    <template #aside-bottom>
+      <AsideSponsors />
+    </template>
+    <template #layout-top>
+      <LayoutTop />
+    </template>
+
+    <SvgImage />
   </DefaultTheme.Layout>
 </template>
 
