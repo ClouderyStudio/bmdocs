@@ -9,7 +9,7 @@ export const core = [
   {
     avatar: 'http://q.qlogo.cn/headimg_dl?dst_uin=2675256772&spec=640&img_type=jpg',
     name: '柒屹',
-    title: '成员',
+    title: '创始人',
     org: 'Cloudery',
     desc: '我是柒屹，同时也是云术工作室重要成员之一，屹立不倒。从事互联网事业及Web开发工作，也在搞关于Java的一些东西',
   },
@@ -27,10 +27,4 @@ export const core = [
     org: 'Cloudery',
     desc: '管理云术生存战争服务器，同时也是云术工作室重要成员之一。',
   },
-]
-
-export const emeriti = [
-]
-
-export const cnTranslator = [
 ]

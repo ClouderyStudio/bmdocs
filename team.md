@@ -11,7 +11,7 @@ import {
   VPTeamPageSection,
   VPTeamMembers
 } from 'vitepress/theme'
-import { core, emeriti, cnTranslator } from './_data/team'
+import { core } from './_data/team'
 </script>
 
 <VPTeamPage>
