@@ -1,4 +1,6 @@
 import { h } from 'vue'
+import { inBrowser } from 'vitepress'
+import busuanzi from 'busuanzi.pure.js'
 import Theme from 'vitepress/theme'
 import HomeSponsors from './components/HomeSponsors.vue'
 import AsideSponsors from './components/AsideSponsors.vue'
@@ -28,10 +30,15 @@ export default {
       'layout-top': () => h(LayoutTop),
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp({ app , router }) {
     app.component('SvgImage', SvgImage)
     app.component('MouseClick' , MouseClick)
     app.component('MouseFollower' , MouseFollower)
     app.component('LayoutTop', LayoutTop)
+    if (inBrowser) {
+      router.onAfterRouteChanged = () => {
+        busuanzi.fetch()
+      }
+    }
   }
 }

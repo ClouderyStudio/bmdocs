@@ -99,14 +99,6 @@ export default defineConfig({
     socialLinks: [
     ],
 
-
-
-    // Using WwAds for China
-    // carbonAds: {
-    //   code: 'CEBIEK3N',
-    //   placement: 'vitejsdev',
-    // },
-
     footer: {
       copyright:
         'Copyright 2022-2025 Cloudery , Std.'

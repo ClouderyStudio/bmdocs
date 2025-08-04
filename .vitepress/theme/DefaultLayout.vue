@@ -3,6 +3,9 @@ import DefaultTheme from 'vitepress/theme'
 import { useData } from 'vitepress'
 import { nextTick, provide } from 'vue'
 
+// Put components here
+import bsz from './components/bsz.vue'
+
 const { isDark } = useData()
 
 const enableTransitions = () =>
@@ -41,7 +44,11 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template #layout-bottom>
+      <bsz />
+    </template>
+  </DefaultTheme.Layout>
 </template>
 
 <style>
