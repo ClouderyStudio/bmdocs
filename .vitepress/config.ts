@@ -118,6 +118,7 @@ export default defineConfig({
       { text: '指引', link: '/docs/', activeMatch: '/docs/' },
       { text: '游戏', link: '/game/', activeMatch: '/game/'},
       { text: '服务', link: '/serve/', activeMatch: '/serve/'},
+      { text: '笔墨星河', link: '/bmdocs/', activeMatch: '/bmdocs/'},
       { text: '团队', link: '/team' },
     ],
     
@@ -235,6 +236,95 @@ export default defineConfig({
           ],
         },
       ],
+      '/bmdocs/': [
+        {
+          text: '笔墨星河',
+          items: [
+            {
+                text: '开始',
+                link: '/bmdocs/'
+            },
+            {
+              text: 'api配置',
+              link: '/bmdocs/api/',
+              items: [
+                {
+                    text: 'deepseek',
+                    link: '/bmdocs/api/deepseek.md',
+                },
+                {
+                    text: '硅基流动',
+                    link: '/bmdocs/api/siliconflow.md',
+                },
+                {
+                    text: 'OpenRouter(默认模型)',
+                    link: '/bmdocs/api/OpenRouter.md',
+                },
+                {
+                    text: 'gemini',
+                    link: '/bmdocs/api/gemini.md',
+                },
+                {
+                    text: 'bigmodel(智谱)',
+                    link: '/bmdocs/api/bigmodel.md',
+                },
+                {
+                    text: 'ollama',
+                    link: '/bmdocs/api/ollama.md',
+                }
+              ]
+            },
+            {
+              text: '下载',
+              link: '/bmdocs/download/',
+              items: [
+                {
+                    text: '使用介绍',
+                    link: '/bmdocs/download/introduction.md',
+                },
+                {
+                    text: '预览版',
+                    link: '/bmdocs/download/preview.md',
+                }
+              ]
+            },
+            {
+              text: 'ai参考输出实例',
+              link: '/bmdocs/example/',
+              items: [
+                {
+                    text: 'DeepSeek V3',
+                    link: '/bmdocs/example/deepseekv3.md',
+                },
+                {
+                    text: 'DeepSeek R1',
+                    link: '/bmdocs/example/deepseekr1.md',
+                },
+                {
+                    text: 'Gemini 2.0 Flash',
+                    link: '/bmdocs/example/gemini2f.md',
+                },
+                {
+                    text: 'Gemini 2.5 Pro Preview 05-06',
+                    link: '/bmdocs/example/gemini25p05-06.md',
+                },
+                {
+                    text: 'Gemini 2.5 Flash Preview 05-20',
+                    link: '/bmdocs/example/gemini25fp05-20.md',
+                },
+                {
+                    text: 'ChatGML(智谱)',
+                    link: '/bmdocs/example/chatgml.md',
+                },
+                {
+                    text: 'Qwen3-235B-A22B',
+                    link: '/bmdocs/example/qwen3-235b-a22b.md',
+                }
+              ]
+            }
+          ],
+        },
+      ]
     }
   },
 })
