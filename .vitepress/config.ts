@@ -11,7 +11,7 @@ export default defineConfig({
   title: 'ClouderyDoc',
   description: '云术工作室文档站',
   lang: 'zh-CN',
-
+  lastUpdated: true,
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -32,6 +32,16 @@ export default defineConfig({
       },
     ],
   ],
+
+  markdown: {
+    config: (md) => {
+      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+          let htmlResult = slf.renderToken(tokens, idx, options);
+          if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+          return htmlResult;
+      }
+    }
+  },
 
   locales: {
     root: { label: '简体中文' },
@@ -110,7 +120,7 @@ export default defineConfig({
       { text: '服务', link: '/serve/', activeMatch: '/serve/'},
       { text: '团队', link: '/team' },
     ],
-
+    
     sidebar: {
       '/docs/': [
         {

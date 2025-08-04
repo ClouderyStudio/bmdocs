@@ -10,6 +10,7 @@ import AsideSponsors from './components/AsideSponsors.vue'
 import SvgImage from './components/SvgImage.vue'
 import WwAds from './components/WwAds.vue'
 import LayoutTop from "./components/LayoutTop.vue"
+import Notice from './components/Notice.vue'
 
 // Import css files here
 import './styles/vars.css'
@@ -75,6 +76,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     </template>
     <template #layout-top>
       <LayoutTop />
+      <Notice />
     </template>
 
     <SvgImage />

@@ -4,13 +4,15 @@ import busuanzi from 'busuanzi.pure.js'
 import Theme from 'vitepress/theme'
 import DefaultLayout from './DefaultLayout.vue'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import ArticleMetadata from './components/ArticleMetadata.vue'
 
 export default {
   ...Theme,
   Layout() {
-    return h(DefaultLayout, null, {})
+    return h(DefaultLayout, null)
   },
-  enhanceApp({ router }) {
+  enhanceApp({ app , router }) {
+    app.component('ArticleMetadata' , ArticleMetadata)
     if (inBrowser) {
       router.onAfterRouteChanged = () => {
         busuanzi.fetch()
