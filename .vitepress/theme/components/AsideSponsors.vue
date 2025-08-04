@@ -18,7 +18,7 @@ const sponsors = computed(() => {
 </script>
 
 <template>
-  <a class="viteconf" href="https://cloudery.cn" target="_blank">
+  <a class="viteconf" href="https://cldery.com" target="_blank">
     <img width="22" height="22" src="/public/main.png" />
     <span>
       <p class="extra-info">云术工作室官网正式投入使用</p>

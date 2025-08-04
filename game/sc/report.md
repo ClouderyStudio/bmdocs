@@ -20,7 +20,7 @@
 
 ### 邮箱举报
 
-- 发送邮件至我们的官方邮箱：[admin@cloudery.cn](mailto:admin@cloudery.cn)，并附上详细的信息和证据。
+- 发送邮件至我们的官方邮箱：[admin@cldery.com](mailto:admin@cldery.com)，并附上详细的信息和证据。
 
 ## 三、奖励标准
 
